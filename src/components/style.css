@@ -9,13 +9,24 @@ body,html {
   padding-top: 30px;
   margin-bottom: 0px;
 }
+
 .title a {
   text-align: center;
   letter-spacing: 0.15em;
   font-weight: normal;
   text-decoration: none;
   color: inherit; 
-  font-size: 40px;
+  font-size: 30px;
+}
+
+.artInfo a {
+  letter-spacing: 0.10em;
+  animation-name: fadein;
+  animation-duration: 0.3s;
+}
+
+.artInfo .title {
+  font-style: italic
 }
 
 h1:visited {
@@ -110,14 +121,6 @@ h1:visited {
   grid-gap: 30px;
 }
 
-.imageGrid > div > .modalButton {
-  padding: 1.5rem;
-  border-radius: 1rem;
-  width: 100%;
-  vertical-align: top;
-  object-fit: cover;
-}
-
 .aboutSection > img {
   height: 400px;
   width: 400px;
@@ -145,26 +148,94 @@ h1:visited {
   color: inherit; 
 }
 
-
-.modalOverlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 9999;
-  opacity: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
-  animation: show .5s ease;
+.modalImageView:hover {
+  opacity: 0.6;
 }
 
-.modal {
+.modalContainer {
+  position: fixed;
+  z-index: 5000;
+  left: 0;
+  top: 0;
   width: 100%;
-  background-color: #fff;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  touch-action: none;
+  overflow: scroll;
+}
+
+.modalImageContent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.modalImageContent img, 
+.modalImageContent svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  overflow: scroll;
+}
+
+.modalImageMedium {
+  max-width: 98%;
+  max-height: 98%;
+  background-color: white;
+}
+
+.__react_modal_image__large_img {
+  cursor: move;
+  background-color: white
+}
+
+/* Add Animation - Zoom in the Modal */
+.modalImageMedium, #caption { 
+animation-name: fadein;
+animation-duration: 0.3s;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+.modalIconMenu a {
+  display: inline-block;
+  font-size: 40px;
+  cursor: pointer;
+  line-height: 40px;
+  box-sizing: border-box;
+  border: none;
+  padding: 0px 5px 0px 5px;
+  margin-left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.modalIconMenu {
+  display: inline-block;
+  float: right;
+}
+
+.reactModalCaption {
+  display: inline-block;
+  color: white;
+  font-size: 120%;
+  padding: 10px;
+  margin: 0;
+}
+
+.modalImageHeader {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  overflow: scroll;
 }

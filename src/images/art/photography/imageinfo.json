@@ -1,0 +1,27 @@
+{
+    "bicyclelady": {
+        "title": "black rock i",
+        "material": "35mm film",
+        "year": 2019
+    },
+    "ladyface": {
+        "title": "black rock ii",
+        "material": "35mm film",
+        "year": 2019
+    },
+    "ladyfull": {
+        "title": "black rock iii",
+        "material": "35mm film",
+        "year": 2019
+    },
+    "monkeys": {
+        "title": "black rock iv",
+        "material": "35mm film",
+        "year": 2019
+    },
+    "elephant": {
+        "title": "black rock v",
+        "material": "35mm film",
+        "year": 2019
+    }
+}

@@ -4,10 +4,13 @@ import ladyface from './ladyface.jpeg';
 import ladyfull from './ladyfull.jpeg';
 import monkeys from './monkeys.jpeg';
 
+import imageinfo from './imageinfo.json';
+
 export {
     bicyclelady,
     elephant,
     ladyface,
     ladyfull,
-    monkeys
+    monkeys,
+    imageinfo
 }
