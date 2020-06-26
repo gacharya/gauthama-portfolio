@@ -6,9 +6,9 @@ const Nav = () => {
     <li className="navButton">
       <a>gallery</a>
     <div className="navDropdown">
-      <a href="americanvedas">american vedas</a>
+      <a href="/americanvedas">american vedas</a>
       <a href="/misc">misc. works</a>
-      <a href="photography">photography</a>
+      <a href="/photography">photography</a>
     </div>
     </li>
     <li className="navButton">
