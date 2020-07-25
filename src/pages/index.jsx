@@ -1,12 +1,12 @@
 import React from 'react';
-import { PageProps } from 'gatsby';
 import { Title } from '../components/header/';
+import banner from '../images/art/extras/shiva_detail.jpg'
 
 const Home = () => (
   <main>
     <Title />
     <div className="subtitle">
-    <p >art, science & technology</p>
+    <img src={banner} className='landingBanner'></img>
     </div>
   </main>
 );

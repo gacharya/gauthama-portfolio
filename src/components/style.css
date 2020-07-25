@@ -239,3 +239,10 @@ animation-duration: 0.3s;
   width: 100%;
   overflow: scroll;
 }
+
+.landingBanner {
+  display: grid;
+  width: 1300px;
+  height: 1000px;
+  object-fit: cover;
+}

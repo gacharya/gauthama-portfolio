@@ -1,5 +1,4 @@
 import React from 'react';
-import { PageProps } from 'gatsby';
 
 const NotFound = () => (
   <main>

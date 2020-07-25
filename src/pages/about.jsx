@@ -1,5 +1,4 @@
 import React from 'react';
-import { PageProps } from 'gatsby';
 import { Title } from '../components/header/';
 import { headshot } from '../images/about'
 import '../components/style.css'
