@@ -243,6 +243,7 @@ animation-duration: 0.3s;
 .landingBanner {
   display: grid;
   width: 1300px;
-  height: 1000px;
+  height: 600px;
   object-fit: cover;
+  object-position: 100% 90%;
 }
