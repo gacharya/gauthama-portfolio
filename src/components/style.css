@@ -247,3 +247,7 @@ animation-duration: 0.3s;
   object-fit: cover;
   object-position: 100% 90%;
 }
+
+main p {
+  letter-spacing: 0.08em;
+}
